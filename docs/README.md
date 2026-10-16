@@ -15,6 +15,7 @@ Start with the offline Grid workflow, then choose a runtime or research module.
 | [Observed experience](experience.md) | Scoped facts, citations, snapshots, and retrieval |
 | [Semantic testing](semantic-testing.md) | Prospective browser experiments and regression tooling |
 | [Research roadmap](research-roadmap.md) | Directions explored and opportunities for community work |
+| [Contribute test data](contributing-data.md) | Small reproducible cases, review stages, and future shared datasets |
 | [Web setup](../web/README.md) | Local viewer, D1 setup, and deployment boundaries |
 | [Unity package](../unity/AutoPlayQA/README.md) | Install the bridge in your own Unity project |
 | [Tool index](../tools/README.md) | General utilities and research harness boundaries |

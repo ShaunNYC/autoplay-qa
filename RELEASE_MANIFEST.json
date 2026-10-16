@@ -9,6 +9,13 @@
       "origin": "overrides"
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/test-data.md",
+      "sha256": "f5a9e070345aeaa4622dd434ddf663e91b474ca267f6039e0dab39b9ce26bff8",
+      "bytes": 2263,
+      "executable": false,
+      "origin": "overrides"
+    },
+    {
       "path": ".github/workflows/ci.yml",
       "sha256": "6c34487554d645b88b54f75eb7197a3f186785e72780184469cb3f2b14a252e5",
       "bytes": 1675,
@@ -31,8 +38,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "bb16ec9aae47a51062deece59e809fdbc0e88c3f8a4bf382f7ed1ec7782b4d96",
-      "bytes": 3001,
+      "sha256": "5084f3c0eaf3fe865df8b06be2f259625bc20ddf9cb444b0e396acf4cb35f63f",
+      "bytes": 3693,
       "executable": false,
       "origin": "overrides"
     },
@@ -45,8 +52,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "cf168e2946e4fe191bce80da6ddcaf942dd5fe2aa6bdf754ac734d7b4c737123",
-      "bytes": 5386,
+      "sha256": "48d597f6b9fc44db10b43d30cf6531d3d04074472721ed21b816447010240359",
+      "bytes": 4508,
       "executable": false,
       "origin": "overrides"
     },
@@ -409,8 +416,8 @@
     },
     {
       "path": "docs/README.md",
-      "sha256": "37c9dcbcc0426cf6313ef265ba6b609ebf0d262096d6c42618eccb3e95926d10",
-      "bytes": 1742,
+      "sha256": "d7a777e42df0442bcd317dc5b6c2fff0f22d328da35c7ad77c53b2fd26d97d85",
+      "bytes": 1861,
       "executable": false,
       "origin": "overrides"
     },
@@ -436,6 +443,13 @@
       "origin": "overrides"
     },
     {
+      "path": "docs/contributing-data.md",
+      "sha256": "019bed847230dcb229eec0bbd837b695532a470bd750f122409c9d51929f2857",
+      "bytes": 6751,
+      "executable": false,
+      "origin": "overrides"
+    },
+    {
       "path": "docs/evidence-formats.md",
       "sha256": "1b96d078441a6ee02fd2c65754e8b9d34f946d2cfcf8d2a88cf7dad9c9d75aba",
       "bytes": 3301,
@@ -451,8 +465,8 @@
     },
     {
       "path": "docs/getting-started.md",
-      "sha256": "f3108dd4e171ca474d5eba99026990d24a8fb1cee1033b20fefb3167a50d8f43",
-      "bytes": 3936,
+      "sha256": "5a50fdf38175175f8cde3279864f5ebfd67e92990d935587981b3cfaf6a6bd79",
+      "bytes": 4134,
       "executable": false,
       "origin": "overrides"
     },
@@ -460,6 +474,20 @@
       "path": "docs/integrations.md",
       "sha256": "2038afb7810ceee32918412d631dbccafb510a5fb760cb9bc9ede3d7b40e00c1",
       "bytes": 3194,
+      "executable": false,
+      "origin": "overrides"
+    },
+    {
+      "path": "docs/media/README.md",
+      "sha256": "7b554a96931a9e7e569da453dfc15ac46c902f9cfa2a82c9559b284ca7a43fe3",
+      "bytes": 841,
+      "executable": false,
+      "origin": "overrides"
+    },
+    {
+      "path": "docs/media/evidence-workspace.jpg",
+      "sha256": "d3048d2bcfc69eb9695586629d630ff86c5a3daf7b01be2548368bac31108344",
+      "bytes": 174078,
       "executable": false,
       "origin": "overrides"
     },
@@ -472,8 +500,8 @@
     },
     {
       "path": "docs/research-roadmap.md",
-      "sha256": "c690d55f4c2bbe8ce6cf1a2656fcfb47ce0d7fcc8b600cf554fc81cb3bbe40a8",
-      "bytes": 3473,
+      "sha256": "ed4553373b47ef592d2cd81088e82ce8782a8de78b488ed6099d0e4cbf0d3a74",
+      "bytes": 4827,
       "executable": false,
       "origin": "overrides"
     },

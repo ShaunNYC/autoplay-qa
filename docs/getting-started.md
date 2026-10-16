@@ -98,5 +98,9 @@ Implementation tests use fake or stub HTTP. Some native integration work needs
 its corresponding runtime and source. The public checkout does not include
 private game projects or prior operator execution archives.
 
+Tests requiring optional runtimes or unavailable historical fixtures report
+explicit skips. Run the available tests from the repository root and include
+any skips when describing your environment.
+
 Continue with [web setup](../web/README.md),
 [runtime integrations](integrations.md), or [research modules](research-roadmap.md).

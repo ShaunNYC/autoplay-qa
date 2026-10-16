@@ -4,6 +4,16 @@ We welcome work that connects new games, improves evidence inspection, or helps
 agents choose more useful tests. The [research roadmap](docs/research-roadmap.md)
 describes the existing extension points and longer-term vision.
 
+## Contribute testing experience
+
+You do not need to change code to help. Share reproducible game interactions,
+normal controls, confirmed issues, or corrections to an AI report. Start with
+the [test-data guide](docs/contributing-data.md) and
+[submission template](.github/ISSUE_TEMPLATE/test-data.md). Small, carefully
+documented cases help us build a shared evaluation collection and work toward
+community-created game models. Future training reuse needs separate explicit
+permission for the contributed material.
+
 ## Propose a concrete change
 
 Explain the developer problem, the resulting behavior, and how you checked it.
@@ -65,6 +75,8 @@ reviewer inputs, and obtain permission to publish contributed game assets.
 
 ## License
 
-Contribute material you have the right to share under the repository's MIT
-license. Preserve third-party license notices and clearly identify separately
-licensed dependencies or assets.
+Code and documentation contributions follow the repository's MIT license.
+For test data, record permissions and attribution per artifact as described in
+the [data contribution guide](docs/contributing-data.md); proposed training
+reuse is reviewed separately. Preserve third-party license notices and clearly
+identify separately licensed dependencies or assets.

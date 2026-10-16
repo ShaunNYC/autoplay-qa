@@ -1,115 +1,102 @@
 # AutoPlay QA
 
-**Turn AI playtesting into evidence developers can inspect and reproduce.**
+**Self-Evolving Video Game QA**
 
-AutoPlay QA is an open source workbench for connecting AI testers to game
-runtimes. NVIDIA Nemotron selects actions and reviews candidate evidence through
-Nebius Token Factory. The host records what actually executes, preserves the
-resulting feedback, and provides tools for developer review and reproduction.
+Our vision is simple: **the more we test, the more accurate our AI testers
+become.** Every useful playthrough should help the next one ask better
+questions, recognize real problems, and avoid repeating unhelpful tests.
 
-Our vision is a self-evolving testing partner: an agent that uses experience to
-ask better questions and create useful regression cases. This is a community
-research goal. The framework contributes the runtime interfaces, evidence
-contracts, and experimental tools on which to build it.
+AutoPlay QA connects NVIDIA Nemotron to games through Nebius Token Factory
+and turns testing sessions into evidence developers can inspect, replay,
+and build on together.
 
-[Getting started](docs/getting-started.md) · [Capabilities](docs/capabilities.md)
-· [Research roadmap](docs/research-roadmap.md) · [Contributing](CONTRIBUTING.md)
-· [MIT license](LICENSE)
+[Explore the demo](https://autoplay-qa-lab.foomusta.chatgpt.site) ·
+[Try it locally](#try-it-locally) ·
+[Contribute test data](docs/contributing-data.md) ·
+[Community roadmap](docs/research-roadmap.md)
 
-[Public evidence demo](https://autoplay-qa-lab.foomusta.chatgpt.site) ·
-Created by [Shaun Wang](https://github.com/ShaunNYC)
+![AutoPlay QA evidence workspace showing a recorded Unity session, playback controls, before-and-after state, and a Nemotron Ultra review](docs/media/evidence-workspace.jpg)
 
-## More than an AI playthrough
+*The local evidence viewer displaying a saved Unity test session and its cited review.*
 
-| Developer need | What AutoPlay QA adds |
-| --- | --- |
-| Know what happened | Public observations, accepted controls, execution acknowledgments, and before/after state |
-| Inspect a candidate | Cited transitions, tentative model assessments, and reproduction evidence |
-| Repeat a behavior | Saved controls and runtime-specific replay/reproduction tools |
-| Combine testing strategies | Scripted coverage and model exploration with distinct source labels |
-| Connect another game | A small observe/act boundary, local protocol, Unity package, and browser adapter |
-| Bound the work | Action, request, and time limits; estimated cost accounting in supported runners and review workflows |
+## Give every test a useful next step
 
-Nemotron contributes contextual action selection and evidence review. Software
-execution records and native reproduction remain separate from model judgments.
-A recurring behavior is evidence to inspect; whether it violates the intended
-design still needs independent review.
+An AI playthrough is most valuable when another developer can understand what
+happened and use it again. AutoPlay QA brings the agent's decisions, game
+feedback, and reproduction tools into one workflow:
 
-## Start without an API key
+**Play → Record → Review → Reproduce**
 
-Use Python **3.11 or newer** from the repository root. The Python core uses the
-standard library and does not require a package installation.
+- **Follow every decision.** Connect a suspected issue to the controls that ran
+  and the game state before and after them.
+- **Let AI investigate.** Nemotron chooses exploration actions and reviews
+  recorded evidence; prospective hypotheses and control experiments give
+  contributors a way to study more purposeful testing.
+- **Keep the evidence useful.** Replay saved sessions, inspect cited reports,
+  and use reproduction and regression tools to carry findings into development.
+- **Build across games.** A shared observation/action interface connects the
+  Grid reference game, Unity integrations, and browser workflows.
+
+This is what we want to add to AI testing: a shared body of inspectable
+experience that developers and agents can improve together.
+
+## More testing. Better judgment.
+
+By **self-evolving**, we mean a tester that learns from the outcome of its work:
+which experiments revealed something useful, which suspicions were mistaken,
+and which checks should become part of the next test session.
+
+We want that cycle to produce **more confirmed findings, fewer false alarms,
+less wasted repetition, and stronger regression coverage**. Our community
+roadmap connects remembered observations, hypothesis-driven experiments,
+developer feedback, and reusable test cases toward that goal.
+
+The longer-term ambition is to **co-create open models specialized for games**:
+models shaped by real mechanics, player interactions, and carefully reviewed
+testing data from the game development community.
+
+## Help build the shared experience
+
+You can contribute without building a model. Share a small, reproducible test:
+the game version and starting state, what happened, what you expected and why,
+and enough evidence for someone else to check it.
+
+**Normal behavior, disproved suspicions, and corrected AI reports are valuable
+too.** Together with confirmed issues and fix checks, they can help future
+testers learn when to investigate and when to move on.
+
+Start with the [test-data contribution guide](docs/contributing-data.md) and
+[submission template](.github/ISSUE_TEMPLATE/test-data.md). We propose reviewing
+small evidence bundles, crediting contributors, and curating reusable examples
+for evaluation and, with explicit permission, future model training.
+
+## Try it locally
+
+From the repository root with Python **3.11+**, record a short Grid session:
 
 ```sh
-python3 -m autoplay_qa --help
 python3 -m autoplay_qa play --seed 0 --log runs/my-play.jsonl
 ```
 
-Play with `n`, `s`, `e`, `w`, `i` (interact), and `.` (wait); press `q` to finish.
-Inspect that ordinary Grid session:
+Use `n`, `s`, `e`, `w`, `i` (interact), and `.` (wait); press `q` to finish.
+Then replay and inspect it:
 
 ```sh
 python3 -m autoplay_qa replay runs/my-play.jsonl
 python3 -m autoplay_qa review runs/my-play.jsonl --evidence
 ```
 
-For the independent scripted benchmark entry point:
+This local walkthrough needs no API key. Continue with the
+[setup guide](docs/getting-started.md) for Nemotron configuration and scripted
+benchmarks, or [web setup](web/README.md) to run the evidence viewer.
 
-```sh
-python3 -m autoplay_qa benchmark --scripted --seeds 0 --record-dir runs/benchmark
-```
+## Build with us
 
-Read its printed results and generated Markdown reports. Benchmark artifacts
-have a separate workflow; do not pass them to the ordinary session `replay`
-command. These examples make no model requests. See
-[evidence formats](docs/evidence-formats.md) before choosing an inspection tool.
+Contribute an adapter, a reproducible case, a clearer evidence view, or an
+experiment that helps agents make better testing decisions.
 
-## What is included
+[Contributing](CONTRIBUTING.md) · [Documentation](docs/README.md) ·
+[Research roadmap](docs/research-roadmap.md) · [MIT license](LICENSE)
 
-- **Game testing core:** a terminal Grid reference game, bounded exploration,
-  scripted coverage, candidate reports, and reproduction tools.
-- **Nemotron integration:** Lightning for default exploration and Ultra for
-  structured, evidence-citing candidate review.
-- **Runtime adapters:** a local protocol and Unity package, plus Mars interpreter
-  and visible-browser adapters. Mars requires separately supplied game source.
-- **Web evidence viewer:** saved state playback, reports, and JSON/Markdown
-  downloads. Bundled demo JSON is a sanitized viewer format, not native video
-  or the Python session JSONL format.
-- **Research modules:** bounded context, observed experience, experiment agendas,
-  persistent investigations, focused facts, prospective hypotheses, controlled
-  comparisons, and regression-export tooling.
-
-The research modules provide mechanisms to study. Reliable learning gains,
-cross-game learned-mechanics transfer, and autonomous discovery of previously
-unknown defects are not established capabilities. See
-[capability status](docs/capabilities.md) and the
-[community roadmap](docs/research-roadmap.md).
-
-## Optional model use
-
-To run your own model session, configure your own Nebius credentials and choose
-explicit limits. Model commands send public game observations and selected
-evidence to the provider and may incur charges. The
-[setup guide](docs/getting-started.md#optional-nebius-configuration) separates
-offline commands from model calls and describes their limits.
-
-The default model identifiers are `nvidia/Nemotron-3_5-Lightning` for exploration
-and `nvidia/Nemotron-3-Ultra-550b-a55b` for review. Availability is determined by
-your provider account. No provider credential is needed to inspect the bundled
-web evidence.
-
-## Develop and contribute
-
-```sh
-python3 -m unittest discover -s tests
-```
-
-Implementation tests use fake or stubbed model responses. Web development needs
-Node.js 22.13+; Unity and browser integrations have additional prerequisites.
-Checks that require optional runtimes or unavailable historical fixtures report
-explicit skips in the public checkout.
-Use the [documentation index](docs/README.md) to choose the appropriate guide.
-
-Contributions are welcome in adapters, evidence inspection, agent experiments,
-and evaluation. Keep model claims, recorded observations, and independently
-confirmed defects distinguishable as the project grows.
+Created by **Shaun Wang** · [GitHub](https://github.com/ShaunNYC) ·
+[LinkedIn](https://www.linkedin.com/in/shaun-wang-3b92222b8)
