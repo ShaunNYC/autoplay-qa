@@ -1,0 +1,22 @@
+[project]
+name = "autoplay-qa"
+version = "0.1.0"
+description = "Evidence-first AI game testing with Nemotron, native replay and developer review"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Shaun Wang"}]
+dependencies = []
+
+[project.scripts]
+autoplay-qa = "autoplay_qa.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["autoplay_qa*", "tools*"]
+
+[tool.setuptools.package-data]
+tools = ["*.mjs"]

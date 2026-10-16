@@ -1,0 +1,15 @@
+{
+  "name": "com.autoplayqa.bridge",
+  "version": "0.1.0",
+  "displayName": "AutoPlay QA Bridge",
+  "description": "A localhost JSON-lines bridge that exposes a Unity game through the AutoPlay QA adapter protocol.",
+  "unity": "2021.3",
+  "keywords": [
+    "testing",
+    "qa",
+    "automation"
+  ],
+  "author": {
+    "name": "AutoPlay QA"
+  }
+}

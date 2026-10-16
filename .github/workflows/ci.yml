@@ -1,0 +1,56 @@
+name: Offline checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit tests with fake provider responses
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Inference-free Grid example
+        run: python -m autoplay_qa benchmark --scripted --seeds 0 --record-dir runs/quickstart
+      - name: Check installable distribution
+        run: |
+          python -m pip install .
+          cd /tmp
+          autoplay-qa --help
+          python -c "from importlib.resources import files; assert files('tools').joinpath('browser_bridge.mjs').is_file(); from autoplay_qa.semantic_analysis import run_semantic_regression"
+
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm run install:ci
+        working-directory: web
+      - run: node --test tests/browser_bridge.test.mjs
+      - run: node --experimental-strip-types --test tests/*.test.mjs
+        working-directory: web
+      - run: npx tsc --noEmit
+        working-directory: web
+      - run: npm run build
+        working-directory: web
