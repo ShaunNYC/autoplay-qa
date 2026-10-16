@@ -52,8 +52,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "48d597f6b9fc44db10b43d30cf6531d3d04074472721ed21b816447010240359",
-      "bytes": 4508,
+      "sha256": "b0697fcd485c851fe2aae516ab02ee1d3ebb5f7f13c82142a575d42b4c08b934",
+      "bytes": 4658,
       "executable": false,
       "origin": "overrides"
     },
@@ -416,8 +416,8 @@
     },
     {
       "path": "docs/README.md",
-      "sha256": "d7a777e42df0442bcd317dc5b6c2fff0f22d328da35c7ad77c53b2fd26d97d85",
-      "bytes": 1861,
+      "sha256": "c50e25c2f96dcd04b6c3aa09bda81ce1f7254b868d1a3db94b204f377b6ea3cf",
+      "bytes": 1975,
       "executable": false,
       "origin": "overrides"
     },
@@ -465,8 +465,8 @@
     },
     {
       "path": "docs/getting-started.md",
-      "sha256": "5a50fdf38175175f8cde3279864f5ebfd67e92990d935587981b3cfaf6a6bd79",
-      "bytes": 4134,
+      "sha256": "d6aa7e075f1f9c722c6b59c988ca99a3346deaf7da1010a048b6adb65c912529",
+      "bytes": 4323,
       "executable": false,
       "origin": "overrides"
     },
@@ -516,6 +516,13 @@
       "path": "docs/triage.md",
       "sha256": "150d877d918d6dc89a6c6a11368b3af74e9027f2d7e8d65154adb2e1976f4f6d",
       "bytes": 2328,
+      "executable": false,
+      "origin": "overrides"
+    },
+    {
+      "path": "docs/user-guide.md",
+      "sha256": "90ae44cd785e36a245afdc384facb08dd07a6a974eba4ecab307ce19f0acbd93",
+      "bytes": 7445,
       "executable": false,
       "origin": "overrides"
     },
@@ -1375,8 +1382,8 @@
     },
     {
       "path": "web/README.md",
-      "sha256": "975734406f2d47006add7bb9608047ddd166442266e87773660e049665d08ddc",
-      "bytes": 3639,
+      "sha256": "0c2d77d2acb90ffcb2386de439a2599be851c41fc4fc5a92da2403b3b5c39b77",
+      "bytes": 3775,
       "executable": false,
       "origin": "overrides"
     },

@@ -12,6 +12,7 @@ and build on together.
 
 [Explore the demo](https://autoplay-qa-lab.foomusta.chatgpt.site) ·
 [Try it locally](#try-it-locally) ·
+[User guide](docs/user-guide.md) ·
 [Contribute test data](docs/contributing-data.md) ·
 [Community roadmap](docs/research-roadmap.md)
 
@@ -86,7 +87,9 @@ python3 -m autoplay_qa replay runs/my-play.jsonl
 python3 -m autoplay_qa review runs/my-play.jsonl --evidence
 ```
 
-This local walkthrough needs no API key. Continue with the
+This local walkthrough needs no API key. Follow the
+[user guide](docs/user-guide.md) for your first session, New test setup, and
+connecting your own game. Continue with the
 [setup guide](docs/getting-started.md) for Nemotron configuration and scripted
 benchmarks, or [web setup](web/README.md) to run the evidence viewer.
 

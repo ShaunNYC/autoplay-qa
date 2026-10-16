@@ -41,6 +41,9 @@ Apply migrations once, in order. Use the server's printed URL, normally port
 
 ## Optional task service
 
+For a step-by-step owner and runner walkthrough, see
+[Start a New test](../docs/user-guide.md#3-start-a-new-test-from-your-dashboard).
+
 The code also contains owner job controls and runner endpoints. Reading saved
 evidence does not require a provider key or live runner. Starting a real job
 requires your own authentication, server configuration, compatible game runtime,

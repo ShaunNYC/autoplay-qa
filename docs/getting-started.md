@@ -1,5 +1,9 @@
 # Getting started
 
+New here? The [user guide](user-guide.md) walks through the demo, your first
+recording, New test setup, and connecting your own game. This page is the
+command and configuration reference.
+
 ## Requirements
 
 - Python 3.11+ for the core, CLI, and Python tests. Run commands from the cloned
