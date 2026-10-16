@@ -25,8 +25,15 @@ interface may differ slightly from the current repository's local interface.
 
 ## 2. Record and replay locally
 
-Download the repository ZIP or clone the repository, open a terminal, and
-change into the folder containing `README.md` and `autoplay_qa/`.
+Download the ZIP from the [GitHub repository](https://github.com/ShaunNYC/autoplay-qa)
+or clone it in a terminal:
+
+```sh
+git clone https://github.com/ShaunNYC/autoplay-qa.git
+cd autoplay-qa
+```
+
+For a ZIP download, change into the extracted folder containing `README.md` and `autoplay_qa/`.
 Check Python, then record your first session:
 
 ```sh

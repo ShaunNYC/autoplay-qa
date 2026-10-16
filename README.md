@@ -11,6 +11,7 @@ and turns testing sessions into evidence developers can inspect, replay,
 and build on together.
 
 [Explore the demo](https://autoplay-qa-lab.foomusta.chatgpt.site) ·
+[GitHub](https://github.com/ShaunNYC/autoplay-qa) ·
 [Try it locally](#try-it-locally) ·
 [User guide](docs/user-guide.md) ·
 [Contribute test data](docs/contributing-data.md) ·
@@ -73,9 +74,11 @@ for evaluation and, with explicit permission, future model training.
 
 ## Try it locally
 
-From the repository root with Python **3.11+**, record a short Grid session:
+Clone the project, then record a short Grid session with Python **3.11+**:
 
 ```sh
+git clone https://github.com/ShaunNYC/autoplay-qa.git
+cd autoplay-qa
 python3 -m autoplay_qa play --seed 0 --log runs/my-play.jsonl
 ```
 

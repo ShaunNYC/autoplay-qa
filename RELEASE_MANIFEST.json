@@ -52,8 +52,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "b0697fcd485c851fe2aae516ab02ee1d3ebb5f7f13c82142a575d42b4c08b934",
-      "bytes": 4658,
+      "sha256": "e970bfbb4193c5ca00dddff57b925bef41f2f7d285df92e263f111d568b0f73d",
+      "bytes": 4778,
       "executable": false,
       "origin": "overrides"
     },
@@ -444,8 +444,8 @@
     },
     {
       "path": "docs/contributing-data.md",
-      "sha256": "019bed847230dcb229eec0bbd837b695532a470bd750f122409c9d51929f2857",
-      "bytes": 6751,
+      "sha256": "3a3046a35709f9726e89022dc66379a35a6e32039ee85b478013883488f8a2aa",
+      "bytes": 6827,
       "executable": false,
       "origin": "overrides"
     },
@@ -521,15 +521,15 @@
     },
     {
       "path": "docs/user-guide.md",
-      "sha256": "90ae44cd785e36a245afdc384facb08dd07a6a974eba4ecab307ce19f0acbd93",
-      "bytes": 7445,
+      "sha256": "996139bd163679b37d952977228fd083a618770f6183073344f96dd108b8cc68",
+      "bytes": 7596,
       "executable": false,
       "origin": "overrides"
     },
     {
       "path": "pyproject.toml",
-      "sha256": "d05ed1aaed6781bebb291baf5be4e1fbdaeb6c96e21077d98bfe0c4108bc9b7f",
-      "bytes": 524,
+      "sha256": "7a48aa86e8a16881dfafda252d03fa29040022c5f1e8d7f3c37cdfe9d4d5a34d",
+      "bytes": 799,
       "executable": false,
       "origin": "overrides"
     },
@@ -1536,8 +1536,8 @@
     },
     {
       "path": "web/components/project-intro.tsx",
-      "sha256": "364bd40158e7ac56f111336b76b926cd7eae82e4988a8276ad678f8a76461fcd",
-      "bytes": 4887,
+      "sha256": "a8a1e2b49837e843e6ee4077fe62425892b4fffaacf8844b6691b5fff7756845",
+      "bytes": 4642,
       "executable": false,
       "origin": "copy"
     },

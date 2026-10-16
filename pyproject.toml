@@ -8,6 +8,12 @@ license = "MIT"
 authors = [{name = "Shaun Wang"}]
 dependencies = []
 
+[project.urls]
+Homepage = "https://autoplay-qa-lab.foomusta.chatgpt.site"
+Repository = "https://github.com/ShaunNYC/autoplay-qa"
+Documentation = "https://github.com/ShaunNYC/autoplay-qa/blob/main/docs/user-guide.md"
+Issues = "https://github.com/ShaunNYC/autoplay-qa/issues"
+
 [project.scripts]
 autoplay-qa = "autoplay_qa.cli:main"
 

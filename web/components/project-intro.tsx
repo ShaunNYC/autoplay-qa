@@ -1,7 +1,6 @@
 import { ArrowDownRight, ArrowRight, ArrowUpRight } from "lucide-react";
 
-// Replace the null repository URL when the public repository has been created.
-const project = { name: "AutoPlay QA", repositoryUrl: null as string | null };
+const project = { name: "AutoPlay QA", repositoryUrl: "https://github.com/ShaunNYC/autoplay-qa" };
 const author = {
   name: "Shaun Wang",
   github: "https://github.com/ShaunNYC",
@@ -11,9 +10,7 @@ const author = {
 export function ProjectIntro() {
   return <section className="project-intro" aria-labelledby="project-title">
     <div className="project-identity">
-      {project.repositoryUrl
-        ? <a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer">GitHub / {project.name}<ArrowUpRight size={22} /></a>
-        : <span className="repository-placeholder" title="GitHub repository placeholder — repository not created yet">GitHub / {project.name}</span>}
+      <a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer">GitHub / {project.name}<ArrowUpRight size={22} /></a>
     </div>
     <div className="intro-composition">
       <div className="intro-copy">

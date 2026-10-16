@@ -12,7 +12,7 @@ examples too.
 
 ## Start with one useful case
 
-Open a **Test data contribution** issue with a short description and the game's
+Open a [**Test data contribution** issue](https://github.com/ShaunNYC/autoplay-qa/issues/new?template=test-data.md) with a short description and the game's
 sharing constraints. Propose a small, distinct batch before uploading large
 archives. Maintainers can agree on a reviewed pull request or an external
 artifact whose access and redistribution permissions are clear. An issue is a
