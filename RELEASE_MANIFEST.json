@@ -52,8 +52,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e970bfbb4193c5ca00dddff57b925bef41f2f7d285df92e263f111d568b0f73d",
-      "bytes": 4778,
+      "sha256": "84273438a750217362e5e740502d7cb88c3d0d88fadd1873dea209bb38124ee7",
+      "bytes": 4812,
       "executable": false,
       "origin": "overrides"
     },
@@ -416,8 +416,8 @@
     },
     {
       "path": "docs/README.md",
-      "sha256": "c50e25c2f96dcd04b6c3aa09bda81ce1f7254b868d1a3db94b204f377b6ea3cf",
-      "bytes": 1975,
+      "sha256": "447a6aca50939543b4b20bd369463bb4dcad9691de5448ce2d56c3b7aefa6287",
+      "bytes": 2103,
       "executable": false,
       "origin": "overrides"
     },
@@ -439,6 +439,13 @@
       "path": "docs/capabilities.md",
       "sha256": "5c971926c41ea32f0cea3065940b902547072d080600ac07c1e0f48e86c838c8",
       "bytes": 2302,
+      "executable": false,
+      "origin": "overrides"
+    },
+    {
+      "path": "docs/cli.md",
+      "sha256": "ad29150a12607fb0fcde1a446cf4dbce78a6e3ff74d69a219a65ea0860942593",
+      "bytes": 16406,
       "executable": false,
       "origin": "overrides"
     },
@@ -465,8 +472,8 @@
     },
     {
       "path": "docs/getting-started.md",
-      "sha256": "d6aa7e075f1f9c722c6b59c988ca99a3346deaf7da1010a048b6adb65c912529",
-      "bytes": 4323,
+      "sha256": "c29df719544931fa052829f6f07bbc9079070ada54863aac5f72dc7055a3a41e",
+      "bytes": 4421,
       "executable": false,
       "origin": "overrides"
     },
@@ -521,8 +528,8 @@
     },
     {
       "path": "docs/user-guide.md",
-      "sha256": "996139bd163679b37d952977228fd083a618770f6183073344f96dd108b8cc68",
-      "bytes": 7596,
+      "sha256": "048de2bd764ad04e107c4b903c72debafe6c42f624755d6f4fe1e84af6ecab5e",
+      "bytes": 7613,
       "executable": false,
       "origin": "overrides"
     },

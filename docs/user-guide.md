@@ -56,8 +56,8 @@ You now have a saved action record, replay/review summaries, and a readable
 Markdown report. A session can have no suspected issues and still be useful.
 These commands need no API key and make no inference requests.
 
-For scripted examples and optional direct AI exploration, continue with
-[Getting started](getting-started.md).
+For command installation, scripted examples, direct AI exploration, and
+troubleshooting, continue with the [CLI guide](cli.md).
 
 ## 3. Start a New test from your dashboard
 

@@ -5,6 +5,7 @@ Start with the offline Grid workflow, then choose a runtime or research module.
 | Guide | Purpose |
 | --- | --- |
 | [User guide](user-guide.md) | Demo walkthrough, first local session, New test setup, and connecting your game |
+| [CLI guide](cli.md) | Installation, all commands, offline walkthrough, AI testing, runtime connections, and troubleshooting |
 | [Getting started](getting-started.md) | Requirements, offline commands, and optional model configuration |
 | [Capability status](capabilities.md) | Working tools, experimental mechanisms, and future goals |
 | [Architecture](architecture.md) | Nemotron roles, host responsibilities, and evidence flow |

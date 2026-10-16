@@ -14,6 +14,7 @@ and build on together.
 [GitHub](https://github.com/ShaunNYC/autoplay-qa) ·
 [Try it locally](#try-it-locally) ·
 [User guide](docs/user-guide.md) ·
+[CLI guide](docs/cli.md) ·
 [Contribute test data](docs/contributing-data.md) ·
 [Community roadmap](docs/research-roadmap.md)
 
@@ -92,9 +93,9 @@ python3 -m autoplay_qa review runs/my-play.jsonl --evidence
 
 This local walkthrough needs no API key. Follow the
 [user guide](docs/user-guide.md) for your first session, New test setup, and
-connecting your own game. Continue with the
-[setup guide](docs/getting-started.md) for Nemotron configuration and scripted
-benchmarks, or [web setup](web/README.md) to run the evidence viewer.
+connecting your own game. The [CLI guide](docs/cli.md) covers installation,
+common commands, Nemotron configuration, and copyable examples. See
+[web setup](web/README.md) to run the evidence viewer.
 
 ## Build with us
 

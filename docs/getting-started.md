@@ -1,8 +1,9 @@
 # Getting started
 
 New here? The [user guide](user-guide.md) walks through the demo, your first
-recording, New test setup, and connecting your own game. This page is the
-command and configuration reference.
+recording, New test setup, and connecting your own game. This page is a short
+setup overview. For installation, all commands, copyable examples, output files,
+and troubleshooting, use the [CLI guide](cli.md).
 
 ## Requirements
 
